@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Formulario HTML2 2
+    </title>
+    <meta charset=”utf-8”>
+</head>
+
+<body>
+    <h1>Iniciar Sesión</h1>
+    <form action="#" method="post">
+        <p>
+            <label for="nombre">Nombre*</label>
+            <input type="text" name="nombre" id="nombre" autofocus required maxlength="15" placeholder="Nombre" title="Nombre">
+        </p>
+        <p>
+            <label for="apellido">Apellido*</label>
+            <input type="text" name="apellido" id="apellido" required maxlength="25" placeholder="Apellido" title="Apellido">
+        </p>
+        <p>
+            <label for="DNI">DNI*</label>
+            <input type="text" name="DNI" id="DNI" required maxlength="9">
+        </p>
+        <p>
+            <label for="telef">Teléfono de contacto</label>
+            <input type="tel" name="telef" id="telef" pattern="[0-9]" maxlength="9" title="Teléfono">
+        </p>
+        <p>
+            <label for="mail">Email</label>
+            <input type="email" name="mail" id="mail" placeholder="example@gmail.com" title="Email">
+        </p>
+        <p>
+            <label for="nac">Fecha de nacimiento</label>
+            <input type="date" name="nac" id="nac">
+        </p>
+        <p>
+            <label for="numero">Numero de hijos</label>
+            <input type="number" name="numero" id="numero" min="0" max="12">
+        </p>
+        <p>
+            <label for="contraseña">Contraseña</label>
+            <input type="password" required name="contraseña" id="contraseña" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}">
+        </p><!-- Esto no lo entiendo pattern -->
+        <p>
+            <label for="archivo">Archivos</label>
+            <input type="file" id="archivo" name="archivo" accept="image/png, image/jpeg">
+        </p>
+        <p>
+            <label>Pais</label><select name="pais">
+                <option value="España" name="España">España</option>
+                <option value="Alemania" name="Alemania">Alemania</option>
+                <option value="UK" name="UK">UK</option>
+                <option value="Checoslovaquia" name="Checoslovaquia" selected>Checoslovaquia</option>
+            </select>
+
+        </p>
+        <p>
+            <label for="hombre"><strong>Sr.</strong></label>
+            <input type="radio" value="Sr" id="hombre" name=sexo>
+            <label for="mujer"><strong>Sra.</strong></label>
+                    <input type="radio" value="Sra" id="mujer" name=sexo>
+        </p>
+        <p>
+            <label for="op">Opiniones del sitio web</label><br />
+            <!-- No funcionan cols y rows-->
+            <textarea rows="2" cols="4" id="op" name="op" placeholder="Escriba su opinión aquí"></textarea>
+        </p>
+        <p>
+            <label for="checkbox-primera">Checkbox 1</label>
+            <input type="checkbox" name="checkbox-primera" id="checkbox-primera">
+            <label for="checkbox-segunda">Checkbox 2</label>
+            <input type="checkbox" name="checkbox-segunda" id="checkbox-segunda">
+        </p>
+        <p>
+            <label><input type="submit"></label>
+        </p>
+
+    </form>
+</body>
+
+</html>

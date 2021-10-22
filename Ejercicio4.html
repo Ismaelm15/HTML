@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Formulario HTML2
+    </title>
+    <meta charset=”utf-8”>
+</head>
+
+<body>
+    <h1>Iniciar Sesión</h1>
+    <form action="#" method="post">
+        <p>
+            <label for="hombre"><strong>Sr.</strong></label>
+            <input type="radio" autofocus value="Sr" id="hombre" name=sexo>
+            <label for="mujer"><strong>Sra.</strong</label>
+                    <input type="radio" autofocus value="Sra" id="mujer" name=sexo>
+        </p>
+        <p>
+            <label><input type="text" id="nombre" name="nombre" placeholder="Nombre/Razón Social"></label>
+        </p>
+        <p>
+            <label><input type="text" id="apellidos" name="apellidos" placeholder="Apellidos*" required></label>
+        </p>
+        <p>
+            <label><input type="email" id="Email" name="Email" placeholder="Email*"required></label>
+        </p>
+        <p>
+            <label><input type="password" id="pass" name="pass" placeholder="Contraseña*"required></label>
+        </p>
+        <h2>Fecha de nacimiento</h2>
+        <label><input type="date" name="fecha"></label>
+        <p>
+            <label><input type="text" id="DNI" name="DNI" placeholder="DNI/NIF/NIE*"required></label>
+        </p>
+        <p>
+            <label><input type="text" id="Direccion" name="Direccion" placeholder="Direccion*"required></label>
+        </p>
+        <p>
+            <label><input type="text" id="CP" name="CP" placeholder="Código Postal*"required></label>
+        </p>
+        <p>
+            <label><input type="text" id="Ciudad" name="Ciudad" placeholder="Ciudad*"required></label>
+        </p>
+        <p>
+            <label><select name="pais">
+                <option value="España" name="España">España</option>
+                <option value="Alemania" name="Alemania">Alemania</option>
+                <option value="UK" name="UK">UK</option>
+                </select>
+            </label>
+        </p>
+        <p>
+            <label><select name="provincia">
+                <option value="" disabled selected>Provincia*</option>
+                <option value="Malaga" name="Malaga">Malaga</option>
+                <option value="Jaén" name="Jaén">Jaén</option>
+                <option value="Huelva" name="Huelva">Huelva</option>
+                </select>
+            </label>
+        </p>
+        <p>
+            <label>
+                <textarea id="infoadi" name="infoadi" placeholder="Información Adicional"></textarea>
+            </label>
+        </p>
+        <p>
+           <label><input type="submit"></label> 
+        </p>
+    </form>
+</body>
+
+</html>

@@ -8,11 +8,10 @@ $(document).ready(function () {
             $(this).children("svg:last-child").css("transform", "rotate(0deg)");
             $(this).parent().parent().find(".texto").slideDown();
             $(this).parent().parent().siblings().find(".texto").slideUp();
-            //muchos parent tiene que haber una manera mas facil
-            $(this).parent().parent().siblings().children().children("svg:last-child").css("transform", "rotate(-90deg)");
-            $(this).parent().parent().siblings().children("div").children("div").children("svg:last-child").css("transform", "rotate(90deg)");
+            //$("main > article > div >section > div > div").children("svg:last-child").css("transform", "rotate(-90deg)");
+
         } else {
-            $(this).children("svg:last-child").css("transform", "rotate(90deg)");
+            $(this).children("svg:last-child").css("transform", "rotate(-90deg)");
             $(this).parent().parent().find(".texto").slideUp();
         }
     })

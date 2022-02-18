@@ -203,7 +203,6 @@ div.negro>main>article.item {
     display: flex;
     flex-flow: column;
     padding: 0.8rem;
-    z-index: -99;
     /*Esto es lo que hace que las imagenes se queden detras*/
 }
 

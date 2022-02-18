@@ -53,6 +53,7 @@ $(document).ready(function() {
             $("header >p#promo").css("margin-left", 250);
             $("div.negro").css("background-color", "black");
             $("div.negro").css("opacity", 0.7);
+            $("article.item").css("z-index", -99);
 
         } else {
             $("header#top>div>nav#menu-principal>ul#menu").animate({ left: "-18rem" });
@@ -62,6 +63,7 @@ $(document).ready(function() {
             $("header >p#promo").css("margin-left", 0);
             $("div.negro").css("background-color", "");
             $("div.negro").css("opacity", 1);
+            $("article.item").css("z-index", "");
         }
     })
 
@@ -78,7 +80,7 @@ $(document).ready(function() {
         }
     });
 
-    $("div.negro>main > article.item img").mouseenter(function() {
+    $("div.negro>main > article.item a>picture> img").mouseenter(function() {
         let cadena = $(this).attr("src").split('.')[0];
         let cadenanueva = cadena + "-1.jpg";
         $(this).attr("src", cadenanueva);
@@ -88,7 +90,5 @@ $(document).ready(function() {
         let cadena = $(this).attr("src").replace("-1", "");
         $(this).attr("src", cadena);
     })
-
-
 
 });

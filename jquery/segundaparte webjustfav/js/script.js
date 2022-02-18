@@ -40,11 +40,10 @@ $(document).ready(function() {
             $("header#top>div>nav#menu-principal>ul#menu").animate({left:"0rem"});
             abierto=1;
             $("main").css("margin-left",250);
-            $("main").css("background-color" ,"rgba(0,0,0,0.8)");
-            $("main>article.item>a:last-child>picture>img::after").css("background-color" ,"rgba(0,0,0,0.8)");
-            $("main").css("back")
             $("header >nav#menu-secundario").css("margin-left",250);
             $("header >p#promo").css("margin-left",250);
+            $("main").css("background-color" ,"rgba(0,0,0,0.8)");
+
         }else{
             $("header#top>div>nav#menu-principal>ul#menu").animate({left:"-18rem"});
             abierto=0;
